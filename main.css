@@ -1,0 +1,48 @@
+html {
+  background-color: #EFEFEF;
+}
+
+.card-panel {
+  margin: 0;
+}
+
+.col {
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.card-panel {
+  margin: 0 0 20px 0;
+}
+
+.sound {
+  position: relative;
+  margin: 0 0 0 20px;
+  font-size: 30px;
+  font-weight: 400;
+  top: 10px;
+  right: 10px;
+}
+
+.countdown {
+  height: 250px;
+  background-color: #FFFFFF;
+}
+
+.timer {
+  font-size: 100px;
+  margin: 0 auto;
+}
+
+.buttons {
+  margin-left: 17px;
+}
+
+.buttonsResume {
+  margin-left: 15px;
+}
