@@ -6,46 +6,48 @@
     <title>Pomodoro Clock</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-		<link rel="stylesheet" href="normalize.css">
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
   </head>
 
   <body>
-    <div class="card-panel teal lighten-2">
-      <h1 class="cyan-text text-darken-4 center">Pomodoro Clock</h1>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="input-field col s3 offset-s3">
-          <i class="material-icons prefix">av_timer</i>
-          <input id="minutes" class="time" type="number" value="25">
-          <label for="minutes">Minutes</label>
-        </div>
-        <div class="switch"><span class="sound teal-text text-darken-3">
+    <div class='container'>
+  <div class="card-panel teal lighten-2">
+    <h1 class="cyan-text text-darken-4 center">Pomodoro Clock</h1>
+  </div>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="input-field col s3 offset-s3">
+        <i class="material-icons prefix">av_timer</i>
+        <input id="minutes" class="time" type="number" value="25" min="1">
+        <label for="minutes">Minutes</label>
+      </div>
+      <div class="switch"><span class="sound teal-text text-darken-3">
       <i class="material-icons ">volume_up</i><span class="sound">Sounds</span>
-          <label>
-            Off
-            <input type="checkbox" class="soundSwitch">
-            <span class="lever"></span> On
-          </label>
-        </div>
-        <div class="col s6 offset-s3 z-depth-2 countdown valign-wrapper">
-          <span class="timer valign cyan-text text-darken-4">25:00</span>
-        </div>
-        <div class="col s6 offset-s3">
-          <a id="start" class="waves-effect waves-light btn-large buttons"><i class="material-icons left">play_arrow</i>Start
+        <label>
+          Off
+          <input type="checkbox" class="soundSwitch">
+          <span class="lever"></span> On
+        </label>
+      </div>
+      <div class="col s6 offset-s3 z-depth-2 countdown valign-wrapper">
+        <span class="timer valign cyan-text text-darken-4">25:00</span>
+      </div>
+      <div class="col s6 offset-s3 buttonRow">
+        <a id="start" class="waves-effect waves-light btn-large buttons"><i class="material-icons left">play_arrow</i>Start
       </a>
-          <a id="pause" class="waves-effect waves-light btn-large buttons"><i class="material-icons left">pause</i>Pause
+        <a id="pause" class="waves-effect waves-light btn-large buttons"><i class="material-icons left">pause</i>Pause
       </a>
-          <a id="stop" class="waves-effect waves-light btn-large buttons"><i class="material-icons left">stop</i>Stop
+        <a id="stop" class="waves-effect waves-light btn-large buttons"><i class="material-icons left">stop</i>Stop
       </a>
-        </div>
       </div>
     </div>
-    <script src="jquery.js"></script>
+  </div>
+    <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    <script src="timer.jquery.js"></script>
-    <script src="main.js"></script>
+    <script src="js/timer.jquery.js"></script>
+    <script src="js/main.js"></script>
   </body>
 
   </html>

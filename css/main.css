@@ -5,7 +5,6 @@ html {
 .card-panel {
   margin: 0;
 }
-
 .col {
   margin: 20px 0;
 }
@@ -19,30 +18,25 @@ h1 {
 .card-panel {
   margin: 0 0 20px 0;
 }
-
 .sound {
-  position: relative;
+  position:relative;
   margin: 0 0 0 20px;
   font-size: 30px;
   font-weight: 400;
   top: 10px;
   right: 10px;
 }
-
 .countdown {
   height: 250px;
   background-color: #FFFFFF;
 }
 
 .timer {
-  font-size: 100px;
+  font-size: 75px;
   margin: 0 auto;
 }
 
-.buttons {
-  margin-left: 17px;
+.buttonRow{
+ text-align:center; 
 }
 
-.buttonsResume {
-  margin-left: 15px;
-}

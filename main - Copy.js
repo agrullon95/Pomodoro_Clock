@@ -51,11 +51,12 @@ function changeTimer() {
 
 function startTimer() {
   $('#start').on('click', function() {
+    
     started = true;
     timerMode();
     if (paused === false) {
       $('.timer').timer({
-        duration: 25 + 'mins',
+        duration: mins + 'mins',
         countdown: true,
         updateFrequency: 1000,
         callback: function() {
@@ -74,7 +75,7 @@ function startTimer() {
 
 function pauseTimer() {
   $('#pause').on('click', function() {
-    started == false;
+    started = false;
     paused = true;
     changeTimer();
     if (alarmOn === true) {
@@ -92,6 +93,7 @@ function stopTimer() {
     started = false;
     paused = false;
     timerMode();
+    changeTimer();
     if (alarmOn === true) {
       alarm.pause();
       alarmOn = false;
